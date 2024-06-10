@@ -1,0 +1,24 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://ubuntu-s-1vcpu-512mb-10gb-sfo3-01/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sat 2024-06-08 00:54:12 UTC; 25min ago
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;
+    Process: 3433 ExecReload=/usr/sbin/nginx -g daemon on; master_process on; -s reload (code=exited, status=0/SUCCESS)
+   Main PID: 2298 (nginx)
+      Tasks: 3 (limit: 508)
+     Memory: 3.9M (peak: 4.5M)
+        CPU: 82ms
+     CGroup: /system.slice/nginx.service
+             ├─[0;38;5;245m2298 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m
+             ├─[0;38;5;245m3206 "nginx: worker process is shutting down"[0m
+             └─[0;38;5;245m3435 "nginx: worker process"[0m
+
+Jun 08 01:03:40 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: Reloading nginx.service - A high performance web server and a reverse proxy server...
+Jun 08 01:03:40 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 nginx[3121]: 2024/06/08 01:03:40 [emerg] 3121#3121: open() "/etc/nginx/sites-enabled/your-site" failed (2: No such file or directory) in /etc/nginx/nginx.conf:60
+Jun 08 01:03:40 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+Jun 08 01:03:40 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mReload failed for nginx.service - A high performance web server and a reverse proxy server.[0m
+Jun 08 01:10:21 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: Reloading nginx.service - A high performance web server and a reverse proxy server...
+Jun 08 01:10:21 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 nginx[3204]: 2024/06/08 01:10:21 [notice] 3204#3204: signal process started
+Jun 08 01:10:21 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: Reloaded nginx.service - A high performance web server and a reverse proxy server.
+Jun 08 01:19:57 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: Reloading nginx.service - A high performance web server and a reverse proxy server...
+Jun 08 01:19:57 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 nginx[3433]: 2024/06/08 01:19:57 [notice] 3433#3433: signal process started
+Jun 08 01:19:57 ubuntu-s-1vcpu-512mb-10gb-sfo3-01 systemd[1]: Reloaded nginx.service - A high performance web server and a reverse proxy server.

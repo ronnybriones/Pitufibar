@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-fwrifmd_tmq)71uob&sjiq_)$csfn#m!t+vr5esl5@uutnnu!w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['pon la ip', 'localhost']
+=======
+ALLOWED_HOSTS = ['143.198.244.186', 'localhost']
+>>>>>>> origin/master
 
 
 # Application definition
@@ -55,7 +59,7 @@ ROOT_URLCONF = 'myproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,3 +132,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = '/home/papapituforoot/pitufiproyecto/pitufiweb/static/'
+<<<<<<< HEAD
+=======
+#os.path.join(BASE_DIR, 'static/')
+>>>>>>> origin/master
